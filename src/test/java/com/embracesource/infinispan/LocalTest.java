@@ -30,6 +30,8 @@ public class LocalTest {
 			throw new HotRodClientException(
 					"Issues configuring from client hotrod-client.properties",
 					e);
+			
+			
 		}
 		RemoteCacheManager basicCacheContainer = new RemoteCacheManager(properties);
 		RemoteCache cache = basicCacheContainer.getCache();
